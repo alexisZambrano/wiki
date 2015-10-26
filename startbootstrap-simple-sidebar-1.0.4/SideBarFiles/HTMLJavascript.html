@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tags HTML</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid" >
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">WikiTags</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/">Bootstrap</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+  </div>
+    <div id="wrapper">
+
+
+
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <ul class="nav nav-sidebar">
+                  <h2>&nbsp</h2>
+                  <h3>
+                    HTML Tutorial
+                  </h3>
+                    <li><a href="HTMLElements.html">HTML Elements</a></li>
+                    <li><a href="HTMLLists.html">HTML Lists</a></li>
+                    <li><a href="">HTML Javascript</a></li>
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <h2>&nbsp</h2>
+                    <h3>
+                    HTML Forms
+                  </h3>
+                    <li><a href="HTMLForms.html">Forms HTML</a></li>
+                    <li><a href="HTMLFormElements.html">HTML Form ELements</a></li>
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <h2>&nbsp</h2>
+                    <h3>
+                    HTML Graphics
+                  </h3>
+                    <li><a href="HTMLCanvas.html">HTML Canvas</a></li>
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <h2>&nbsp</h2>
+                    <h3>
+                    HTML Media
+                  </h3>
+                    <li><a href="HTML5Video.html">HTML5 Video</a></li>
+
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <h2>&nbsp</h2>
+                    <h3>
+                    HTML APIS
+                  </h3>
+                    <li><a href="HTML5DAD.html">HTML5 Drag and Drop</a></li>
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <h2>&nbsp</h2>
+                    <h3>
+                    HTML References
+                  </h3>
+                    <li><a href="HTML5EReference.html">HTML5 Element Reference</a></li>
+                    
+                  </ul>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+
+
+
+
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+
+
+
+          <!--################################################################-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-11">
+                        <h1>&nbsp&nbsp</h1>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">&lt;--&gt;</a>
+                        <h1>Scripts en HTML</h1>
+                        <p>
+                          los Javascripts hacen a las páginas HTML más dinámicas e interactivas
+                        </p>
+                        <h3>El tag &lt;script&gt;</h3>
+                        <p>
+                          El tag &lt;script&gt; es usado del lado del cliente, El elemento &lt;script&gt; puede contener sentencias javascript o a su vez llamar a un archivo .js externo.
+                        </p>
+                        <h3>Miren como se ve</h3>
+                        <p>
+                          Javascript puede cambiar el contenido de un archivo HTML
+                        </p>
+                        <pre>
+                          <button type="button" onclick="myFunction()">Click!</button>
+                          <p id="demo">Cambia este contenido</p>
+                          <script>
+                          function myFunction() {
+                            document.getElementById("demo").innerHTML = "Contenido cambiado";
+                          }
+                          </script>
+                        </pre>
+                        <p>
+                          Veamos el código
+                        </p>
+                        <pre>
+                          <pre>
+                            &lt;button type="button" onclick="myFunction()"&gt;Click!&lt;/button&gt;
+                            &lt;p id="demo"&gt;Cambia este contenido&lt;/p&gt;
+                            &lt;script&gt;
+                            function myFunction() {
+                              document.getElementById("demo").innerHTML = "Contenido cambiado";
+                            }
+                          </pre>
+                        </pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!--################################################################-->
+
+
+
+
+
+
+            <!--################################################################-->
+            <!--
+            <div class="container-fluid">
+              <p><code>&lt;header&gt;</code> is wrapped as an inline element.</p>
+            </div>-->
+            <!--################################################################-->
+
+
+
+            <!--################################################################-->
+            <div class="container-fluid">
+              <h2 class="sub-header">Tags de scripts de HTML</h2>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Tag</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>&lt;script&gt;</td>
+                      <td>Define un script del cliente</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;noscript&gt;</td>
+                      <td>Define un contenido alternativo para usuarios que no soportan scripts del lado del cliente</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!--################################################################-->
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <div class="container-fluid">
+      <footer>
+        <p class="pull-right">Realizado por Alexis Zambrano</p>
+      </footer>
+    </div>
+
+</body>
+
+</html>

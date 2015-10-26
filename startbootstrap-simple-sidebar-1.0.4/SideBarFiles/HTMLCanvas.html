@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tags HTML</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid" >
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">WikiTags</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/">Bootstrap</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+  </div>
+    <div id="wrapper">
+
+
+
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <ul class="nav nav-sidebar">
+                  <h2>&nbsp</h2>
+                  <h3>
+                  HTML Tutorial
+                </h3>
+                  <li><a href="HTMLElements.html">HTML Elements</a></li>
+                  <li><a href="HTMLLists.html">HTML Lists</a></li>
+                  <li><a href="HTMLJavascript.html">HTML Javascript</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                  <h2>&nbsp</h2>
+                  <h3>
+                  HTML Forms
+                </h3>
+                  <li><a href="HTMLForms.html">Forms HTML</a></li>
+                  <li><a href="HTMLFormElements.html">HTML Form ELements</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                  <h2>&nbsp</h2>
+                  <h3>
+                  HTML Graphics
+                </h3>
+                  <li><a href="">HTML Canvas</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                  <h2>&nbsp</h2>
+                  <h3>
+                  HTML Media
+                </h3>
+                  <li><a href="HTML5Video.html">HTML5 Video</a></li>
+
+                </ul>
+                <ul class="nav nav-sidebar">
+                  <h2>&nbsp</h2>
+                  <h3>
+                  HTML APIS
+                </h3>
+                  <li><a href="HTML5DAD.html">HTML5 Drag and Drop</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                  <h2>&nbsp</h2>
+                  <h3>
+                  HTML References
+                </h3>
+                  <li><a href="HTML5EReference.html">HTML5 Element Reference</a></li>
+                  
+                </ul>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+
+
+
+
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+
+
+
+          <!--################################################################-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-11">
+                        <h1>&nbsp&nbsp</h1>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">&lt;--&gt;</a>
+                        <h1>HTML5 Canvas</h1>
+                        <p>
+                          ele elemento &lt;canvas&gt; se usa para dibujar algo en una página web
+                        </p>
+                        <p>Podemos dibujar rectángulos, círculos, etc.</p>
+                        <p>
+                          Estos elementos se dibujan via Javascript, el &lt;canvas&gt; es solo un contenedor par gráficos, se debe uar javascript para dibujar dichos gráficos.
+                        </p>
+                        <h3>Veamos como se ve</h3>
+                        <div>
+                          <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                            Hola mundo
+                          </canvas>
+                        </div>
+                        <p>
+                          Como podemos ver hermos dibujado un rectángulo, este elemento me permite definir el ancho y el largo del rectángulo.
+                        </p>
+                        <p>
+                          Ahora dibujemos un circulo dentro de un canvas
+                        </p>
+                        <div>
+                          <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #d3d3d3;">
+                          Your browser does not support the HTML5 canvas tag.</canvas>
+
+                          <script>
+                          var c = document.getElementById("myCanvas1");
+                          var ctx = c.getContext("2d");
+                          ctx.beginPath();
+                          ctx.arc(95,50,40,0,2*Math.PI);
+                          ctx.stroke();
+                          </script>
+                        </div>
+                        <p>
+                          Vemos el código
+                        </p>
+                        <div >
+                          <pre>
+                            &lt;canvas id="myCanvas1" width="200" height="100" style="border:1px solid #d3d3d3;"&gt;
+                            hola.&lt;/canvas&gt;
+
+                            &lt;script&gt;
+                            var c = document.getElementById("myCanvas1");
+                            var ctx = c.getContext("2d");
+                            ctx.beginPath();
+                            ctx.arc(95,50,40,0,2*Math.PI);
+                            ctx.stroke();
+                            &lt;/script&gt;
+                          </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--################################################################-->
+
+
+
+
+
+
+            <!--################################################################-->
+            <!--
+            <div class="container-fluid">
+              <p><code>&lt;header&gt;</code> is wrapped as an inline element.</p>
+            </div>-->
+            <!--################################################################-->
+
+
+
+            <!--################################################################-->
+            <!--
+            <div class="container-fluid">
+              <h2 class="sub-header">Section title</h2>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1,001</td>
+                      <td>Lorem</td>
+                      <td>ipsum</td>
+                      <td>dolor</td>
+                      <td>sit</td>
+                    </tr>
+                    <tr>
+                      <td>1,002</td>
+                      <td>amet</td>
+                      <td>consectetur</td>
+                      <td>adipiscing</td>
+                      <td>elit</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>-->
+            <!--################################################################-->
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <div class="container-fluid">
+      <footer>
+        <p class="pull-right">Realizado por Alexis Zambrano</p>
+      </footer>
+    </div>
+
+</body>
+
+</html>
